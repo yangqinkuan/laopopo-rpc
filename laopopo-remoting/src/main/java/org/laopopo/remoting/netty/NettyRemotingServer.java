@@ -129,11 +129,7 @@ public class NettyRemotingServer extends NettyRemotingBase implements RemotingSe
         } else if (boss instanceof NioEventLoopGroup) {
             ((NioEventLoopGroup) boss).setIoRatio(100);
         }
-        if (worker instanceof EpollEventLoopGroup) {
-            ((EpollEventLoopGroup) worker).setIoRatio(100);
-        } else if (worker instanceof NioEventLoopGroup) {
-            ((NioEventLoopGroup) worker).setIoRatio(100);
-        }
+
         
         serverBootstrap.option(ChannelOption.SO_BACKLOG, 32768);
         serverBootstrap.option(ChannelOption.SO_REUSEADDR, true);

@@ -43,10 +43,10 @@ public class ServiceWrapper {
 	private boolean isFlowController;
 	/****单位时间内最大的调用次数****/
 	private long maxCallCountInMinute = DEFAULT_MAX_CALLCOUN_TINMINUTE;
-	
+
 	public ServiceWrapper(Object serviceProvider, Object mockDegradeServiceProvider, String serviceName,
-			String responsiblityName, String methodName, List<Class<?>[]> paramters, boolean isSupportDegradeService, String degradeServicePath,
-			String degradeServiceDesc, int weight, int connCount,boolean isVIPService,boolean isFlowController,long maxCallCountInMinute) {
+						  String responsiblityName, String methodName, List<Class<?>[]> paramters, boolean isSupportDegradeService, String degradeServicePath,
+						  String degradeServiceDesc, int weight, int connCount,boolean isVIPService,boolean isFlowController,long maxCallCountInMinute) {
 		this.serviceProvider = serviceProvider;
 		this.mockDegradeServiceProvider = mockDegradeServiceProvider;
 		this.serviceName = serviceName;

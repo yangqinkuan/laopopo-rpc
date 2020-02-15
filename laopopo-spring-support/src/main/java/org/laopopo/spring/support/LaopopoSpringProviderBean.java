@@ -19,6 +19,7 @@ public class LaopopoSpringProviderBean implements InitializingBean {
 	private int listenerPort;
 	private Object[] publishObjs;
 
+
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		

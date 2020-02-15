@@ -195,6 +195,7 @@ public class DefaultProvider implements Provider {
 		ProviderStateIsHealthy = true;
 	}
 
+
 	@Override
 	public Provider publishService(Object... obj) {
 		this.obj = obj;

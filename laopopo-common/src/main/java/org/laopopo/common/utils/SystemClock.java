@@ -14,6 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
  *
  * Forked from <A>https://github.com/zhongl/jtoolkit/blob/master/common/src/main/java/com/github/zhongl/jtoolkit/SystemClock.java</A>
  */
+// 避免各个线程频繁调用 System.currentTimeMillis() ,采用守护线程
 public class SystemClock {
 
     private static final SystemClock millisClock = new SystemClock(1);
